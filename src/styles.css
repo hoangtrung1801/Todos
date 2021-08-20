@@ -1,0 +1,92 @@
+body {
+  background-color: #f6e58d;
+}
+
+.App {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.Todos {
+  display: inline-block;
+
+  border: 2px solid white;
+  border-radius: 1rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin-top: 1rem;
+  padding: 1rem;
+  width: 500px;
+
+  background-color: #f9ca24;
+}
+
+.TodoLogo {
+  text-align: center;
+  color: #ff7979;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.TodoInput {
+  border: 1px solid #f0932b;
+  border-radius: 1rem;
+  overflow: hidden;
+
+  background-color: #c7ecee;
+}
+
+.TodoInput form {
+  display: flex;
+  align-items: center;
+}
+
+.TodoInput span {
+  display: flex;
+  align-content: center;
+  font-size: 1.5rem;
+
+  padding: 5px 10px;
+
+  cursor: pointer;
+}
+
+.TodoInput input {
+  flex-grow: 1;
+  border: none;
+  font-size: 1.25rem;
+
+  padding: 5px 15px;
+  background-color: #dff9fb;
+}
+
+.TodoInput input:focus {
+  outline: none;
+}
+
+.TodoList ul {
+  list-style-type: none;
+  padding: 0 10px;
+}
+
+.TodoList li {
+  margin: 5px 0;
+
+  display: flex;
+  align-items: center;
+}
+
+.TodoList li *:nth-child(1) {
+  font-size: 1.25rem;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.TodoFilter ul {
+  list-style-type: none;
+  display: flex;
+  padding: 0 10px;
+}
+
+.TodoFilter ul * {
+  text-transform: capitalize;
+}
